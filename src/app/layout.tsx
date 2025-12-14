@@ -1,3 +1,5 @@
+// 'use client';
+
 import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -30,8 +32,12 @@ export default function RootLayout({
         className={`min-h-screen flex flex-col antialiased`}
       >
         <Header />
-        {children}
+        {/* {children} */}
+        <div className="h-screen">
+          {children}
+        </div>
         <Footer />
+
       </body>
     </html>
   );
